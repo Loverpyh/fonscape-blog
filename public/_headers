@@ -1,0 +1,13 @@
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Permissions-Policy: camera=(), geolocation=(), microphone=()
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+
+/audio/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
+
+/fonscape/generated-images/*
+  Cache-Control: public, max-age=31536000, immutable

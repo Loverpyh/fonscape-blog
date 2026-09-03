@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "version": "1.13.7",
+  "ownership": {
+    "user": [
+      ".env",
+      ".env.*",
+      ".dev.vars",
+      ".dev.vars.*",
+      "fonscape.config.js",
+      "functions/_generated/**",
+      "public/fonscape/content/**",
+      "public/fonscape/generated-images/**",
+      "src/content/friends.json",
+      "src/content/posts/**",
+      "src/content/poems/**",
+      "src/content/music/**",
+      "public/assets/**",
+      "public/audio/**"
+    ],
+    "seed": [
+      "fonscape.config.js",
+      "src/content/friends.json"
+    ],
+    "history": [
+      "migrations/**"
+    ],
+    "merge": [
+      ".github/workflows/**",
+      ".env.example",
+      "index.html",
+      "package.json",
+      "pnpm-lock.yaml",
+      "pnpm-workspace.yaml",
+      "vercel.json",
+      "wrangler.jsonc"
+    ],
+    "theme": [
+      ".github/CODEOWNERS",
+      ".github/assets/**",
+      ".github/ISSUE_TEMPLATE/**",
+      ".github/PULL_REQUEST_TEMPLATE.md",
+      ".gitignore",
+      ".fonscape-version",
+      "content-repository.config.mjs",
+      "e2e/**",
+      "eslint.config.js",
+      "fonscape.manifest.json",
+      "GUIDE.md",
+      "LICENSE",
+      "README.md",
+      "playwright.config.mjs",
+      "api/**",
+      "functions/**",
+      "public/fonscape/**",
+      "public/_headers",
+      "public/_redirects",
+      "scripts/**",
+      "server/**",
+      "src/**",
+      "test/**",
+      "tsconfig.json",
+      "vite.config.mjs",
+      "worker/**"
+    ]
+  }
+}

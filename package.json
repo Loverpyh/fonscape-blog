@@ -1,0 +1,75 @@
+{
+  "name": "fonscape-blog",
+  "version": "1.13.7",
+  "description": "Fonscape（风栖），一款清新、响应式、注重阅读体验的 React 个人博客主题模板。",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UndefinedFons/Fonscape.git"
+  },
+  "homepage": "https://github.com/UndefinedFons/Fonscape#readme",
+  "packageManager": "pnpm@11.16.0",
+  "type": "module",
+  "bin": {
+    "fonscape": "scripts/fonscape-update.mjs"
+  },
+  "cloudflare": {
+    "bindings": {
+      "DB": {
+        "description": "Stores runtime accounts, comments, sessions and rate-limit state; published blog content remains in Git."
+      },
+      "ADMIN_BOOTSTRAP_TOKEN": {
+        "description": "Enter a long random one-time token. Leave no default value; the first administrator enters it on /#/admin/setup."
+      }
+    }
+  },
+  "scripts": {
+    "generate:content-targets": "node scripts/generate-content-targets.mjs",
+    "generate:font-css": "node scripts/generate-font-css.mjs",
+    "generate:responsive-images": "node scripts/generate-responsive-images.mjs",
+    "check:content-targets": "node scripts/generate-content-targets.mjs --check",
+    "check:font-css": "node scripts/generate-font-css.mjs --check",
+    "check:responsive-images": "node scripts/generate-responsive-images.mjs --check",
+    "check:performance-budget": "node scripts/check-performance-budget.mjs",
+    "pnpm:devPreinstall": "node scripts/generate-content-targets.mjs && node scripts/generate-font-css.mjs && node scripts/generate-responsive-images.mjs --manifest-only",
+    "predev": "node scripts/generate-content-targets.mjs && node scripts/generate-font-css.mjs && node scripts/generate-responsive-images.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/generate-content-targets.mjs && node scripts/generate-font-css.mjs && node scripts/generate-responsive-images.mjs",
+    "build": "vite build",
+    "build:vercel": "pnpm migrate:turso --apply && pnpm build",
+    "preview": "vite preview",
+    "pretest": "node scripts/generate-content-targets.mjs && node scripts/generate-font-css.mjs && node scripts/generate-responsive-images.mjs",
+    "test": "node --test",
+    "test:e2e": "playwright test",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc -p tsconfig.json",
+    "db:migrate:cloudflare": "wrangler d1 migrations apply DB --remote",
+    "deploy": "pnpm db:migrate:cloudflare && wrangler deploy",
+    "migrate:turso": "node scripts/migrate-turso.mjs",
+    "fonscape": "node scripts/fonscape-update.mjs",
+    "check": "pnpm test && pnpm typecheck && pnpm lint && vite build && pnpm check:performance-budget"
+  },
+  "dependencies": {
+    "@libsql/client": "0.17.4",
+    "@phosphor-icons/react": "^2.1.10",
+    "@vercel/functions": "3.9.1",
+    "@vitejs/plugin-react": "5.0.4",
+    "prism-react-renderer": "^2.4.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "vite": "6.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.62.1",
+    "eslint": "10.9.1",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.11.0",
+    "sharp": "0.35.2",
+    "typescript": "^5.9.2",
+    "wrangler": "4.120.0"
+  }
+}
