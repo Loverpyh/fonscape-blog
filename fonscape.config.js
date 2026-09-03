@@ -55,7 +55,7 @@ const siteConfig = {
     owner: "博客作者",
   },
   heroes: {
-    home: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
+    home: { image: "/assets/preview.jpg", position: "center", mobilePosition: "center", size: "cover" },
     posts: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
     poems: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
     music: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
