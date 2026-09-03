@@ -19,6 +19,15 @@
   "triggers": {
     "crons": ["17 3 * * SUN"]
   },
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "d0a6b76356354d6fa7ccdfc834eb1107",
+      
+      // Optional: preview_id used when running `wrangler dev` for local dev
+      "preview_id": "<ID_OF_PREVIEW_KV_NAMESPACE_FOR_LOCAL_DEVELOPMENT>"
+    }
+  ]
   "d1_databases": [
     {
       "binding": "DB",
