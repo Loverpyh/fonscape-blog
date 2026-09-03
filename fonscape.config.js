@@ -61,7 +61,7 @@ const siteConfig = {
     posts: { image: "/assets/preview5.jpg", position: "center", mobilePosition: "center", size: "cover" },
     poems: { image: "/assets/preview6.jpg", position: "center", mobilePosition: "center", size: "cover" },
     music: { image: "/assets/preview8.jpg", position: "center", mobilePosition: "center", size: "cover" },
-    friends: { image: "/assets/20250121001605.jpg", position: "center", mobilePosition: "center", size: "cover" },
+    friends: { image: "/assets/20250121001602.jpg", position: "center", mobilePosition: "center", size: "cover" },
     about: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
   },
 };
