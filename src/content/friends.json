@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "name": "示例站点",
+    "url": "https://www.adoretheall-pyh.top/",
+    "description": "一航的小屋",
+    "owner": "Adoretheall",
+    "avatar": "/assets/friend-example.webp",
+    "color": "#d98ab0"
+  }
+]
