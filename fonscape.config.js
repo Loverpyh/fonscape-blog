@@ -9,6 +9,7 @@ const siteConfig = {
   showMusic: true,
   home: {
     image: "/assets/preview.jpg",
+    size: "cover",
     eyebrow: "PERSONAL BLOG",
     title: "我的博客",
     description: "人性的背后是白云苍狗，愿你我都做生活的高手",
