@@ -8,15 +8,15 @@ const siteConfig = {
   showPoems: true,
   showMusic: true,
   home: {
-     image: "/assets/preview.jpg",
+    image: "/assets/preview.jpg",
     eyebrow: "PERSONAL BLOG",
     title: "我的博客",
     description: "人性的背后是白云苍狗，愿你我都做生活的高手",
   },
   author: {
     name: "博客作者",
-    avatar: "",
-    avatarAlt: "/assets/preview.jpg",
+    avatar: "/assets/preview.jpg",
+    avatarAlt: "",
     tagline: "个人签名",
     introduction: "人性的背后是白云苍狗，愿你我都做生活的高手",
     interests: [],
