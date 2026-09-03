@@ -12,7 +12,7 @@ const siteConfig = {
     size: "cover",
     mobilePosition: "60% center",
     eyebrow: "Adoretheall BLOG",
-    title: "",
+    title: "个人博客",
     description: "人性的背后是白云苍狗，愿你我都做生活的高手",
   },
   author: {
@@ -58,10 +58,10 @@ const siteConfig = {
   },
   heroes: {
     home: { image: "/assets/preview.jpg", position: "center", mobilePosition: "center", size: "cover" },
-    posts: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
-    poems: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
-    music: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
-    friends: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
+    posts: { image: "/assets/preview5.jpg", position: "center", mobilePosition: "center", size: "cover" },
+    poems: { image: "/assets/preview6.jpg", position: "center", mobilePosition: "center", size: "cover" },
+    music: { image: "/assets/preview8.jpg", position: "center", mobilePosition: "center", size: "cover" },
+    friends: { image: "/assets/20250121001605.jpg", position: "center", mobilePosition: "center", size: "cover" },
     about: { image: defaultHeroImage, position: "center", mobilePosition: "center", size: "cover" },
   },
 };
