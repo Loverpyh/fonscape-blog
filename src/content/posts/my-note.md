@@ -18,4 +18,8 @@ musicPlacement: "inline"
 
 
 [[article-music]]
-<a href="https://www.adoretheall-pyh.top" target="_blank">点击跳转链接</a>
+
+
+{
+  <a href="https://www.adoretheall-pyh.top" target="_blank">点击跳转链接</a>
+}
